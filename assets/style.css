@@ -1,0 +1,105 @@
+:root{
+    --default-font:Arial, Helvetica, sans-serif;
+
+  }
+  * {
+    background-color:#181d27;
+  }
+  body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-family: var(--default-font);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header {
+    font-family: var(--default-font);
+    padding: 40px;
+    text-align: center;
+    color: violet;
+  }
+  
+  header > p {
+    color:white;
+  }
+
+  
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    font-family: var(--default-font);
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    color: violet;
+    margin-top: auto;
+    font-size: 150%;
+    font-weight: 500;
+  }
+  
+  .products {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    border: 3px dotted white;
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px;;
+  }
+
+  .card header{
+    font-family:var(--default-font);
+    font-size: 200%;
+    font-weight: 200;
+    padding:none;
+    color: violet;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: none;
+    position: relative;
+    top: -60px;
+  }
+  #code-desc {
+    font-family: var(--default-font);
+    color:violet;
+    text-align: center;
+  }
+  #code-snip{
+    color:white;
+    border: 1px solid violet;
+    background-color: violet;
+    padding: 2em;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    .products{
+        width: 50%;
+    }
+  }
